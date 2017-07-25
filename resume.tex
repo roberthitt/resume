@@ -20,12 +20,12 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\documentclass{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
 
 \usepackage{helvet} % Default font is the helvetica postscript font
 %\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 
-\setlength{\textwidth}{5.1in} % Text width of the document
+\setlength{\textwidth}{6.1in} % Text width of the document
 
 \begin{document}
 
@@ -35,21 +35,24 @@
 
 \moveleft.5\hoffset\centerline{\large\bf Robert Hitt} % Your name at the top
  
-\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
+\moveleft.5\hoffset\centerline{Amissville, Virginia $\bullet$ (703) 895-1923 $\bullet$ rhitt@gmu.edu}
  
-\moveleft.5\hoffset\centerline{3489 Running Quail Trail} % Your address
-\moveleft.5\hoffset\centerline{Amissville, Virginia 20106}
-\moveleft.5\hoffset\centerline{(703) 895-1923}
-\moveleft.5\hoffset\centerline{rhitt@gmu.edu}
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt} % Horizontal line after name; adjust line thickness by changing the '1pt'
 
 %----------------------------------------------------------------------------------------
 
 \begin{resume}
 
 %----------------------------------------------------------------------------------------
-%	OBJECTIVE SECTION
+%	EXPERIENCE SECTION
 %---------------------------------------------------------------------------------------- 
 
+\vspace{-18pt}\section{EXPERIENCE}
+{Software Engineering Intern, \sl Data Works Inc.} \hfill May 2017 - July 2017 \smallskip
+\begin{itemize}
+\item Worked with 4 other interns to develop a data triage tool that allows organizations to get a high level understanding of what types of data are in their backlog and prioritize that data for analysis without manual inspection. 
+\item The project focused on developing a classification system capable of identifying specific attributes (i.e. names, phone numbers, email addresses, monetary data, etc.) and using these characteristics to score the data's relevance/importance.
+\end{itemize} 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
@@ -58,25 +61,24 @@
 
 {\sl Bachelor of Computer Science,}  \hfill August 2016 - June 2018 \\
 George Mason University, Fairfax, VA \hfill GPA: 3.41/4.00 \smallskip\\
-Relevant Courses: Data Structures, Linear Algebra, Probability and Statistics\\
+Relevant Courses: Data Structures, Linear Algebra, Probability and Statistics
 
 {\sl Associate of Computer Science,}  \hfill August 2014 - June 2016 \\
 Northern Virginia Community College, Annandale, VA \hfill GPA: 3.33/4.00 \smallskip\\
-Graduated Cum Laude\\
+Graduated Cum Laude
  
 %----------------------------------------------------------------------------------------
 %	Technology SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{TECHNOLOGY \\ SKILLS} 
+\section{TECHNOLOGY SKILLS} 
 
-{\sl Programming Languages:} \\ \null\qquad - Python, Kotlin, Java, Javascript, C \\
-{\sl Frameworks:} \\ \null\qquad - Apache Spark, Angular 4, Express.js, JUnit \\
-{\sl Software:} \\ \null\qquad - Git, Vim, VSCode, Android Studio\\
-{\sl Operating Systems:} \\ \null\qquad - Linux, Windows \\
+{\sl Programming Languages:} \\ \null\qquad - Python, Kotlin, Java, Javascript, Clojure, C \smallskip\\
+{\sl Frameworks:} \\ \null\qquad - Apache Spark, Angular 4, Elasticsearch, JUnit \smallskip\\
+{\sl Software/Operating Systems:} \\ \null\qquad - Git, Linux, Vim, VSCode, Android, Windows
  
 %----------------------------------------------------------------------------------------
-%	PROFESSIONAL EXPERIENCE SECTION
+%	ACTIVITES SECTION
 %----------------------------------------------------------------------------------------
  
 \section{ACTIVITIES}
@@ -88,22 +90,17 @@ Graduated Cum Laude\\
 \end{itemize} 
 
 %----------------------------------------------------------------------------------------
-%	EXPERIENCE SECTION
-%---------------------------------------------------------------------------------------- 
-
-
-%----------------------------------------------------------------------------------------
 %	PROJECTS SECTION
 %----------------------------------------------------------------------------------------
 
 \section{PROJECTS} 
 
-What's Open - https://git.gmu.edu/srct/whats-open-android
+What's Open
 \begin{itemize}
 \item Project lead and active contributor to Android app which displays George Mason University facility data from an HTTP API and presents what facilities on campus are open and those facilities' schedules.
 \end{itemize}
 
-Iodine Monoxide - https://devpost.com/software/leap-motion-classroom-tool
+Iodine Monoxide
 \begin{itemize}
 \item Project developed for HackNC 2016. Unity app that allows students to model chemical structures with Leap Motion devices and concurrently displays those models in a Heroku web app.
 \item Won first place at HackNC 2016.
