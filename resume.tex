@@ -23,7 +23,9 @@
 \documentclass{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
 
 \usepackage{helvet} % Default font is the helvetica postscript font
-%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+\topmargin=-0.6in  % start text higher on the page
+\setlength{\textheight}{10in} % increase text height to fit resume on 1 page
+\newsectionwidth{0pt}  % So the text is not indented under section headings
 
 \setlength{\textwidth}{6.1in} % Text width of the document
 
@@ -47,41 +49,73 @@
 %	EXPERIENCE SECTION
 %---------------------------------------------------------------------------------------- 
 
-\vspace{-18pt}\section{EXPERIENCE}
+\vspace{-22pt}\section{EXPERIENCE} \smallskip
 {Software Engineering Intern, \sl Data Works Inc.} \hfill May 2017 - July 2017 \smallskip
 \begin{itemize}
 \item Worked with 4 other interns to develop a data triage tool that allows organizations to get a high level understanding of what types of data are in their backlog and prioritize that data for analysis without manual inspection. 
-\item The project focused on developing a classification system capable of identifying specific attributes (i.e. names, phone numbers, email addresses, monetary data, etc.) and using these characteristics to score the data's relevance/importance.
+\item Personal responsibilities: 
+    \begin{itemize}
+    \item Data generation for training machine learning models
+    \item Apache Spark based data extraction
+    \item Full-stack development of source upload feature
+    \item Developed frontend for reclassification used in semi-supervised learning
+    \end{itemize}
 \end{itemize} 
+
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt} % Horizontal line after name; adjust line thickness by changing the '1pt'
+
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-\section{EDUCATION}
+\vspace{-10pt}\section{EDUCATION} \smallskip
 
-{\sl Bachelor of Computer Science,}  \hfill August 2016 - June 2018 \\
+{\sl Bachelor of Computer Science,}  \hfill August 2016 - Present \\
 George Mason University, Fairfax, VA \hfill GPA: 3.41/4.00 \smallskip\\
-Relevant Courses: Data Structures, Linear Algebra, Probability and Statistics
+{\sl Relevant Courses:} Data Structures, Linear Algebra, Probability and Statistics
 
-{\sl Associate of Computer Science,}  \hfill August 2014 - June 2016 \\
+\vspace{-3pt}{\sl Associate of Computer Science,}  \hfill August 2014 - June 2016 \\
 Northern Virginia Community College, Annandale, VA \hfill GPA: 3.33/4.00 \smallskip\\
 Graduated Cum Laude
  
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt} % Horizontal line after name; adjust line thickness by changing the '1pt'
+
 %----------------------------------------------------------------------------------------
 %	Technology SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{TECHNOLOGY SKILLS} 
+\vspace{-10pt}\section{TECHNOLOGY SKILLS} \smallskip 
 
-{\sl Programming Languages:} \\ \null\qquad - Python, Kotlin, Java, Javascript, Clojure, C \smallskip\\
+{\sl Programming Languages:} \\ \null\qquad - Python, Kotlin, Java, C, Javascript \smallskip\\
 {\sl Frameworks:} \\ \null\qquad - Apache Spark, Angular 4, Elasticsearch, JUnit \smallskip\\
 {\sl Software/Operating Systems:} \\ \null\qquad - Git, Linux, Vim, VSCode, Android, Windows
  
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt} % Horizontal line after name; adjust line thickness by changing the '1pt'
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\vspace{-10pt}\section{PROJECTS} \smallskip 
+
+{\sl What's Open} -- git.gmu.edu/srct/whats-open-android \smallskip
+\begin{itemize}
+\item Project lead and active contributor to Android app which displays George Mason University facility data from an HTTP API and presents what facilities on campus are open and those facilities' schedules.
+\end{itemize}
+
+\vspace{-8pt}{\sl Iodine Monoxide} -- devpost.com/software/leap-motion-classroom-tool \smallskip
+\begin{itemize}
+\item Project developed for HackNC 2016. Unity app that allows students to model chemical structures with Leap Motion devices and concurrently displays those models in a Heroku web app.
+\item Won first place at HackNC 2016.
+\end{itemize}
+
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt} % Horizontal line after name; adjust line thickness by changing the '1pt'
+
 %----------------------------------------------------------------------------------------
 %	ACTIVITES SECTION
 %----------------------------------------------------------------------------------------
  
-\section{ACTIVITIES}
+\vspace{-10pt}\section{ACTIVITIES} \smallskip
 
 {\sl Mason Student Run Computing \& Technology} \hfill August 2016 - Present
 \begin{itemize}
@@ -89,22 +123,7 @@ Graduated Cum Laude
 \item Managed and contributed to various open source projects designed to benefit George Mason students.
 \end{itemize} 
 
-%----------------------------------------------------------------------------------------
-%	PROJECTS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{PROJECTS} 
-
-What's Open
-\begin{itemize}
-\item Project lead and active contributor to Android app which displays George Mason University facility data from an HTTP API and presents what facilities on campus are open and those facilities' schedules.
-\end{itemize}
-
-Iodine Monoxide
-\begin{itemize}
-\item Project developed for HackNC 2016. Unity app that allows students to model chemical structures with Leap Motion devices and concurrently displays those models in a Heroku web app.
-\item Won first place at HackNC 2016.
-\end{itemize}
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt} % Horizontal line after name; adjust line thickness by changing the '1pt'
 
 %----------------------------------------------------------------------------------------
 
