@@ -20,13 +20,17 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+% !TEX program = lualatex
+% ^ magic which gives VSCode's LaTeX plugin the correct typesetting engine
 
-%\usepackage{helvet} % Default font is the helvetica postscript font
+\documentclass{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\usepackage{fontspec} 
+\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+
 \topmargin=-0.6in  % start text higher on the page
 \setlength{\textheight}{10in} % increase text height to fit resume on 1 page
 \newsectionwidth{0pt}  % So the text is not indented under section headings
-\renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemii}{$\circ$} % change second-level list symbols to hollow bullets
 
 \setlength{\textwidth}{6.5in} % Text width of the document
 
