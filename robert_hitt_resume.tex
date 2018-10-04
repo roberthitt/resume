@@ -32,7 +32,8 @@
 \newsectionwidth{0pt}  % So the text is not indented under section headings
 \renewcommand{\labelitemii}{$\circ$} % change second-level list symbols to hollow bullets
 
-\setlength{\textwidth}{6.5in} % Text width of the document
+%\setlength{\textwidth}{6.5in} % Text width of the document
+\usepackage[left=2cm, right=2cm, top=1cm, bottom=1cm]{geometry}
 
 \begin{document}
 
@@ -44,7 +45,8 @@
 
 \moveleft.5\hoffset\centerline{Fairfax, Virginia  $\bullet$  (703) 895-1923  $\bullet$  rhitt@gmu.edu  $\bullet$  github.com/roberthitt}
 
-\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt} % Horizontal line after name; adjust line thickness by changing the '1pt'
+\vspace{-15pt}
+\noindent\makebox[\linewidth]{\rule{\textwidth}{1pt}}
 
 %----------------------------------------------------------------------------------------
 
@@ -55,26 +57,29 @@
 %----------------------------------------------------------------------------------------
 
 \vspace{-22pt}\section{EXPERIENCE} \smallskip
-\textbf{Computer Science Teaching Assistant} \hfill January 2018 - Present \\
+
+\textbf{Research Assistant} \hfill May 2018 - Present \\
 George Mason University\smallskip
 \begin{itemize}
-\item Assist 10-20 students during labs, 3 hours a week.
-\item Assist graduate teaching assistants with grading lab work.
-\item Answer students' questions on university's online Q\&A board.
-\end{itemize}
-\textbf{Software Development Intern} \hfill May 2017 - July 2017 \\
-Data Works Inc.\smallskip
-\begin{itemize}
-\item Worked with four other interns to develop a data analysis tool that allows organizations to categorize large datasets without manual inspection.
-\item Personal responsibilities:
-    \begin{itemize}
-    \item Generated data for training machine learning models
-    \item Developed Apache Spark modules for data extraction
-    \item Developed Angular frontend components
-    \end{itemize}
+\item Did things
+\item Did other things
 \end{itemize}
 
-\vspace{-5pt}\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}
+\vspace{-8pt}\textbf{Computer Science Teaching Assistant} \hfill January 2018 - Present \\
+George Mason University\smallskip
+\begin{itemize}
+\item Assist 20+ students during labs; answer students' questions on university's online Q\&A board.
+\end{itemize}
+
+\vspace{-8pt}\textbf{Software Development Intern} \hfill May 2017 - July 2017 \\
+Data Works Inc.\smallskip
+\begin{itemize}
+\item Worked with a team of interns to develop a data analysis tool that allows organizations to categorize large datasets without manual inspection.
+\item Developed Apache Spark modules for data extraction, generated data for training deep learning models, and developed Angular frontend components.
+\end{itemize}
+
+\vspace{-15pt}
+\noindent\makebox[\linewidth]{\rule{\textwidth}{1pt}}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -84,11 +89,12 @@ Data Works Inc.\smallskip
 
 \textbf{Bachelor of Computer Science}  \hfill August 2016 - Present\\
 \medskip
-George Mason University, Fairfax, VA \hfill GPA: 3.55/4.00\\
-\textbf{Relevant Courses:} Data Structures, Software Engineering, Database Concepts\\
+George Mason University, Fairfax, VA \hfill GPA: 3.51/4.00\\
+\textbf{Relevant Courses:} Data Mining, Software Engineering, Database Concepts\\
 \textbf{Expected Graduation Date:} May 2019
 
-\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}
+\vspace{-15pt}
+\noindent\makebox[\linewidth]{\rule{\textwidth}{1pt}}
 
 %----------------------------------------------------------------------------------------
 %	Technology SKILLS SECTION
@@ -97,10 +103,11 @@ George Mason University, Fairfax, VA \hfill GPA: 3.55/4.00\\
 \vspace{-10pt}\section{TECHNOLOGY SKILLS} \smallskip
 
 \textbf{Programming Languages:} Python, Java, SQL, Javascript, Kotlin, C \smallskip\\
-\textbf{Frameworks:} Apache Spark, Android, React, Angular 4, Elasticsearch \smallskip\\
-\textbf{Software/Operating Systems:} Git, Linux, Docker, Vim, Windows
+\textbf{Frameworks:} Scikit-learn, Jupyter, Apache Spark, Android, Angular \smallskip\\
+\textbf{Software/Operating Systems:} Git, Linux, Docker, Vim
 
-\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}
+\vspace{-15pt}
+\noindent\makebox[\linewidth]{\rule{\textwidth}{1pt}}
 
 %----------------------------------------------------------------------------------------
 %	PROJECTS SECTION
@@ -119,7 +126,8 @@ George Mason University, Fairfax, VA \hfill GPA: 3.55/4.00\\
 \item Unity app that allows students to model chemical structures with Leap Motion devices and concurrently display those models in a Flask web app.
 \end{itemize}
 
-\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}
+\vspace{-15pt}
+\noindent\makebox[\linewidth]{\rule{\textwidth}{1pt}}
 
 %----------------------------------------------------------------------------------------
 %	ACTIVITIES SECTION
@@ -127,7 +135,7 @@ George Mason University, Fairfax, VA \hfill GPA: 3.55/4.00\\
 
 \vspace{-10pt}\section{ACTIVITIES} \smallskip
 
-\textbf{Treasurer}, Mason Student Run Computing \& Technology \hfill August 2016 - Present\smallskip
+\textbf{Vice President}, Mason Student Run Computing \& Technology \hfill August 2016 - Present\smallskip
 \begin{itemize}
 \item Coordinate and mentor hackathons and workshops that introduce other students to subjects such as Git version control and making contributions to open source software.
 \item Manage and contribute to various open source projects intended to benefit Mason students.
